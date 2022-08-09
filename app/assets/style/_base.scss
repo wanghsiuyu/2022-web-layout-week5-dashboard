@@ -1,0 +1,14 @@
+body {
+  font-family: 'Lato', sans-serif;
+  //   font-family: 'Roboto', sans-serif;
+}
+.container {
+  max-width: 984px;
+}
+a {
+  color: black !important;
+  &:hover {
+    color: #198754 !important;
+    transition: color 0.5s;
+  }
+}

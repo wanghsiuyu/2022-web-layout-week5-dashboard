@@ -1,0 +1,26 @@
+.nav li a:hover {
+  color: black !important;
+  background-color: #ced4da !important;
+  transition: background-color 0.5s;
+}
+.nav-link-active {
+  color: #198754 !important;
+  padding-left: 20px !important;
+  border-left: 4px solid #198754;
+}
+.list-group-item.active {
+  background-color: #f8f9fa !important;
+  border-color: #ced4da !important;
+}
+code {
+  color: #198754;
+  background-color: #f8f9fa;
+  font-family: roboto;
+}
+.textarea-reply {
+  width: 100%;
+  height: 200px;
+  border: none;
+  resize: none;
+  outline: none;
+}
