@@ -12,9 +12,17 @@ a {
 
 a:hover {
   color: #198754 !important;
-  -webkit-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.fz-xs {
+  font-size: 12px;
+}
+
+.fz-s {
+  font-size: 14px;
 }
 
 .nav li a:hover {
@@ -31,12 +39,9 @@ a:hover {
   border-left: 4px solid #198754;
 }
 
-.fz-xs {
-  font-size: 12px;
-}
-
-.fz-s {
-  font-size: 14px;
+.list-group-item.active {
+  background-color: #f8f9fa !important;
+  border-color: #ced4da !important;
 }
 
 code {
@@ -45,21 +50,12 @@ code {
   font-family: roboto;
 }
 
-.list-group-item.active {
-  background-color: #f8f9fa !important;
-  border-color: #ced4da !important;
-}
-
 .textarea-reply {
   width: 100%;
   height: 200px;
   border: none;
   resize: none;
   outline: none;
-}
-
-.b1 {
-  border: 1px solid black;
 }
 
 /*# sourceMappingURL=all.css.map */
