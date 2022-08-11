@@ -1,0 +1,23 @@
+// pagination start
+.page-item {
+  width: 32px;
+  height: 32px;
+}
+.page-link {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 1px solid #198754;
+  &-active {
+    color: #fff !important;
+    background-color: #198754;
+    &:hover {
+      color: #fff !important;
+      background-color: #198754;
+    }
+  }
+  &:hover {
+    border: 1px solid #198754;
+  }
+}
+// pagination end

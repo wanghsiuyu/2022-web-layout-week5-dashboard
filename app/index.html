@@ -38,7 +38,10 @@ current: index
         >
       </li>
       <li class="nav-item mb-4">
-        <a class="nav-link d-flex py-1 px-4 align-center fw-bold" aria-current="page" href="#"
+        <a
+          class="nav-link d-flex py-1 px-4 align-center fw-bold"
+          aria-current="page"
+          href="./admin.html"
           ><span class="material-icons me-3"> supervisor_account </span>Admin</a
         >
       </li>
@@ -49,7 +52,7 @@ current: index
       </li>
     </ul>
     <!-- vertical navs end -->
-    <!-- media object start -->
+    <!-- teacher's account start -->
     <div class="d-flex align-items-center mx-4">
       <div class="flex-shrink-0">
         <img
@@ -64,14 +67,14 @@ current: index
         <small class="text-secondary">andy0401@mail.com</small>
       </div>
     </div>
-    <!-- media object end -->
+    <!-- teacher's account end -->
   </aside>
   <main class="container">
     <!-- navbar start -->
     <nav class="py-5">
       <ul class="list-unstyled d-flex align-items-center mb-0">
         <li>
-          <h1 class="h3 fw-bold me-5">Assignment</h1>
+          <h1 class="h3 fw-bold me-5 mb-0">Assignment</h1>
         </li>
         <li class="me-auto">
           <select class="form-select border-0 fw-bold" aria-label="Default select example">
@@ -107,196 +110,639 @@ current: index
     <div class="row">
       <!-- list group start -->
       <div class="col-4">
-        <div class="list-group">
+        <div class="list-group" id="list-tab" role="tablist">
           <a
-            href="#"
             class="list-group-item list-group-item-action active mb-0"
-            aria-current="true"
+            id="list-home-list"
+            data-bs-toggle="list"
+            href="#list-home"
+            role="tab"
+            aria-controls="list-home"
           >
-            <div class="d-flex fz-xs text-dark mb-1">
+            <div class="d-flex fz-xs mb-1">
               <span class="me-auto">Chapter Assignment 2</span>
               <span class="">4 hrs ago</span>
             </div>
             <div class="d-flex fz-xs align-items-center">
-              <span class="me-auto fs-6 text-dark fw-bold">Please check this file…</span>
+              <span class="me-auto fs-6 fw-bold">Please check this file…</span>
               <span class="text-secondary">Emily Wang</span>
             </div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action mb-0" aria-current="true">
-            <div class="d-flex fz-xs text-dark mb-1">
+          <a
+            class="list-group-item list-group-item-action mb-0"
+            id="list-profile-list"
+            data-bs-toggle="list"
+            href="#list-profile"
+            role="tab"
+            aria-controls="list-profile"
+          >
+            <div class="d-flex fz-xs mb-1">
               <span class="me-auto">Chapter Assignment 1</span>
               <span class="">12 hrs ago</span>
             </div>
             <div class="d-flex fz-xs align-items-center">
-              <span class="me-auto fs-6 text-dark fw-bold">My Homework</span>
+              <span class="me-auto fs-6 fw-bold">My Homework</span>
               <span class="text-secondary">David Xu</span>
             </div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action mb-0" aria-current="true">
-            <div class="d-flex fz-xs text-dark mb-1">
+          <a
+            class="list-group-item list-group-item-action mb-0"
+            id="list-messages-list"
+            data-bs-toggle="list"
+            href="#list-messages"
+            role="tab"
+            aria-controls="list-messages"
+          >
+            <div class="d-flex fz-xs mb-1">
               <span class="me-auto">Final Assignment</span>
               <span class="">18 hrs ago</span>
             </div>
             <div class="d-flex fz-xs align-items-center">
-              <span class="me-auto fs-6 text-dark fw-bold">Have a problem with this…</span>
+              <span class="me-auto fs-6 fw-bold">Have a problem with this…</span>
               <span class="text-secondary">Tony Wei</span>
             </div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action mb-0" aria-current="true">
-            <div class="d-flex fz-xs text-dark mb-1">
+          <a
+            class="list-group-item list-group-item-action mb-0"
+            id="list-settings-list"
+            data-bs-toggle="list"
+            href="#list-settings"
+            role="tab"
+            aria-controls="list-settings"
+          >
+            <div class="d-flex fz-xs mb-1">
               <span class="me-auto">Final Assignment</span>
               <span class="">19 hrs ago</span>
             </div>
             <div class="d-flex fz-xs align-items-center">
-              <span class="me-auto fs-6 text-dark fw-bold">Did I do it right?</span>
+              <span class="me-auto fs-6 fw-bold">Did I do it right?</span>
               <span class="text-secondary">Christina Lin</span>
             </div>
           </a>
         </div>
       </div>
       <!-- list group end -->
+
       <div class="col-8">
-        <!-- card start -->
-        <div class="card mb-3">
-          <div class="card-header d-flex align-items-center">
-            <div class="me-auto">
-              <small class="fz-xs text-dark">Chapter Assignment 2 / HTML&CSS</small>
-              <p class="fw-bold mb-0">Please check this file for me, thanks!</p>
-            </div>
-            <span class="material-icons"> more_vert </span>
-          </div>
-          <div class="card-body">
-            <!-- student question start -->
-            <div class="d-flex">
-              <div class="flex-shrink-0">
-                <img
-                  class="rounded-circle"
-                  style="width: 40px; height: 40px"
-                  src="./assets/images/emilywang.jpeg"
-                  alt="avatar"
-                />
-              </div>
-              <div class="flex-grow-1 ms-3 pb-3 border-bottom mb-3">
-                <p>
-                  Emily Wang <br />
-                  <time class="text-secondary fz-xs">10:38 AM (4 hours ago)</time>
-                </p>
-                <p class="fz-s">
-                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a
-                  question: Why in the following code the height of the <code>div</code> is bigger
-                  than the height of the <code>img</code> ? There is a gap below the image, but it
-                  doesn’t seems to be a padding/margin. What is the gap or extra space below image?
-                </p>
-                <a href="#" class="btn btn-light border fw-bold" download="HW-2-David.zip"
-                  ><span class="material-icons me-2">attach_file</span>HW-2-David.zip</a
-                >
-              </div>
-            </div>
-            <!-- student question end -->
-            <!-- teacher reply start -->
-            <div class="reply d-flex">
-              <div class="flex-shrink-0">
-                <img
-                  class="rounded-circle"
-                  style="width: 40px; height: 40px"
-                  src="./assets/images/andychen.jpeg"
-                  alt="avatar"
-                />
-              </div>
-              <div class="flex-grow-1 ms-3">
-                <div class="d-flex align-items-center">
-                  <p class="me-auto">
-                    Andy Chen (You) <br />
-                    <time class="text-secondary fz-xs">13:24 AM (1 hours ago)</time>
-                  </p>
-                  <ul class="list-unstyled d-flex">
-                    <li class="me-4">
-                      <a href="#"><span class="material-icons"> star_border </span></a>
-                    </li>
-                    <li>
-                      <a class="edit-btn" href="#"
-                        ><span class="material-icons" title="手刻版本">edit</span></a
-                      >
-                    </li>
-                  </ul>
+        <div class="tab-content" id="nav-tabContent">
+          <!-- tab-pane-1 start -->
+          <div
+            class="tab-pane fade show active"
+            id="list-home"
+            role="tabpanel"
+            aria-labelledby="list-home-list"
+          >
+            <!-- card start -->
+            <div class="card mb-3">
+              <div class="card-header d-flex align-items-center">
+                <div class="me-auto">
+                  <small class="fz-xs">Chapter Assignment 2 / HTML&CSS</small>
+                  <p class="fw-bold mb-0">Please check this file for me, thanks!</p>
                 </div>
-                <p class="fz-s">
-                  Hi David, by default, an image is rendered inline, like a letter so it sits on the
-                  same line that a, b, c and d sit on. There is space below that line for the
-                  descenders you find on letters like g, j, p and q.
-                </p>
-                <p class="fz-s">You can:</p>
-                <ul class="fz-s">
-                  <li>
-                    adjust the <code>vertical-align</code> of the image to position it elsewhere
-                    (e.g. the <code>middle</code> ) or
-                  </li>
-                  <li>change the <code>display</code> so it isn’t inline.</li>
-                </ul>
+                <span class="material-icons"> more_vert </span>
               </div>
+              <div class="card-body">
+                <!-- student question start -->
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="rounded-circle"
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/emilywang.jpeg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3 pb-3 border-bottom mb-3">
+                    <p>
+                      Emily Wang <br />
+                      <time class="text-secondary fz-xs">10:38 AM (4 hours ago)</time>
+                    </p>
+                    <p class="fz-s">
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                      question: Why in the following code the height of the <code>div</code> is
+                      bigger than the height of the <code>img</code> ? There is a gap below the
+                      image, but it doesn’t seems to be a padding/margin. What is the gap or extra
+                      space below image?
+                    </p>
+                    <a href="#" class="btn btn-light border fw-bold" download="HW-2-David.zip"
+                      ><span class="material-icons me-2">attach_file</span>HW-2-David.zip</a
+                    >
+                  </div>
+                </div>
+                <!-- student question end -->
+                <!-- teacher reply start -->
+                <div class="reply d-flex">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="rounded-circle"
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/andychen.jpeg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <div class="d-flex align-items-center">
+                      <p class="me-auto">
+                        Andy Chen (You) <br />
+                        <time class="text-secondary fz-xs">13:24 AM (1 hours ago)</time>
+                      </p>
+                      <ul class="list-unstyled d-flex">
+                        <li class="me-4">
+                          <a href="#"><span class="material-icons"> star_border </span></a>
+                        </li>
+                        <li>
+                          <a class="edit-btn" href="#"
+                            ><span class="material-icons" title="手刻版本">edit</span></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="fz-s">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on
+                      the same line that a, b, c and d sit on. There is space below that line for
+                      the descenders you find on letters like g, j, p and q.
+                    </p>
+                    <p class="fz-s">You can:</p>
+                    <ul class="fz-s">
+                      <li>
+                        adjust the <code>vertical-align</code> of the image to position it elsewhere
+                        (e.g. the <code>middle</code> ) or
+                      </li>
+                      <li>change the <code>display</code> so it isn’t inline.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- teacher reply end -->
+              </div>
+              <!-- card-body end -->
+              <!-- editor start -->
+              <div class="editor d-none">
+                <div class="card-header list-unstyled d-flex gap-4 align-items-center">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light fw-bolder dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Body Text
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Heading Text</a></li>
+                      <li><a class="dropdown-item" href="#">Subheading Text</a></li>
+                      <li><a class="dropdown-item" href="#">Body Text</a></li>
+                    </ul>
+                  </div>
+                  <a href="#" class="lh-1"><span class="material-icons"> format_bold </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> format_italic </span></a>
+                  <a href="#" class="lh-1"
+                    ><span class="material-icons"> format_list_bulleted </span></a
+                  >
+                  <a href="#" class="lh-1"
+                    ><span class="material-icons"> format_list_numbered </span></a
+                  >
+                  <a href="#" class="lh-1"><span class="material-icons"> image </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> link </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> code </span></a>
+                </div>
+                <textarea placeholder="Reply an answer" class="textarea-reply p-4"></textarea>
+                <div class="d-flex justify-content-end mb-3 me-3">
+                  <button type="button" class="cancel-btn btn btn-outline-success py-2 px-4 me-3">
+                    Cancel
+                  </button>
+                  <button type="button" class="reply-btn btn btn-success py-2 px-4">Reply</button>
+                </div>
+              </div>
+              <!-- editor end -->
             </div>
-            <!-- teacher reply end -->
+            <!-- card end -->
           </div>
-          <!-- card-body end -->
-          <!-- editor start -->
-          <div class="editor d-none">
-            <div class="card-header list-unstyled d-flex gap-4 align-items-center">
-              <div class="dropdown">
-                <button
-                  class="btn btn-light fw-bolder dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Body Text
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Heading Text</a></li>
-                  <li><a class="dropdown-item" href="#">Subheading Text</a></li>
-                  <li><a class="dropdown-item" href="#">Body Text</a></li>
-                </ul>
+          <!-- tab-pane-1 end -->
+          <!-- tab-pane-2 start -->
+          <div
+            class="tab-pane fade"
+            id="list-profile"
+            role="tabpanel"
+            aria-labelledby="list-profile-list"
+          >
+            <!-- card start -->
+            <div class="card mb-3">
+              <div class="card-header d-flex align-items-center">
+                <div class="me-auto">
+                  <small class="fz-xs">Chapter Assignment 1</small>
+                  <p class="fw-bold mb-0">My Homework</p>
+                </div>
+                <span class="material-icons"> more_vert </span>
               </div>
-              <a href="#" class="lh-1"><span class="material-icons"> format_bold </span></a>
-              <a href="#" class="lh-1"><span class="material-icons"> format_italic </span></a>
-              <a href="#" class="lh-1"
-                ><span class="material-icons"> format_list_bulleted </span></a
-              >
-              <a href="#" class="lh-1"
-                ><span class="material-icons"> format_list_numbered </span></a
-              >
-              <a href="#" class="lh-1"><span class="material-icons"> image </span></a>
-              <a href="#" class="lh-1"><span class="material-icons"> link </span></a>
-              <a href="#" class="lh-1"><span class="material-icons"> code </span></a>
+              <div class="card-body">
+                <!-- student question start -->
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="rounded-circle"
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/emilywang.jpeg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3 pb-3 border-bottom mb-3">
+                    <p>
+                      David Xu <br />
+                      <time class="text-secondary fz-xs">2:38 AM (12 hours ago)</time>
+                    </p>
+                    <p class="fz-s">
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                      question: Why in the following code the height of the <code>div</code> is
+                      bigger than the height of the <code>img</code> ? There is a gap below the
+                      image, but it doesn’t seems to be a padding/margin. What is the gap or extra
+                      space below image?
+                    </p>
+                    <a href="#" class="btn btn-light border fw-bold" download="HW-2-David.zip"
+                      ><span class="material-icons me-2">attach_file</span>HW-2-David.zip</a
+                    >
+                  </div>
+                </div>
+                <!-- student question end -->
+                <!-- teacher reply start -->
+                <div class="reply d-flex">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="rounded-circle"
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/andychen.jpeg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <div class="d-flex align-items-center">
+                      <p class="me-auto">
+                        Andy Chen (You) <br />
+                        <time class="text-secondary fz-xs">13:24 AM (1 hours ago)</time>
+                      </p>
+                      <ul class="list-unstyled d-flex">
+                        <li class="me-4">
+                          <a href="#"><span class="material-icons"> star_border </span></a>
+                        </li>
+                        <li>
+                          <a class="edit-btn" href="#"
+                            ><span class="material-icons" title="手刻版本">edit</span></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="fz-s">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on
+                      the same line that a, b, c and d sit on. There is space below that line for
+                      the descenders you find on letters like g, j, p and q.
+                    </p>
+                    <p class="fz-s">You can:</p>
+                    <ul class="fz-s">
+                      <li>
+                        adjust the <code>vertical-align</code> of the image to position it elsewhere
+                        (e.g. the <code>middle</code> ) or
+                      </li>
+                      <li>change the <code>display</code> so it isn’t inline.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- teacher reply end -->
+              </div>
+              <!-- card-body end -->
+              <!-- editor start -->
+              <div class="editor d-none">
+                <div class="card-header list-unstyled d-flex gap-4 align-items-center">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light fw-bolder dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Body Text
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Heading Text</a></li>
+                      <li><a class="dropdown-item" href="#">Subheading Text</a></li>
+                      <li><a class="dropdown-item" href="#">Body Text</a></li>
+                    </ul>
+                  </div>
+                  <a href="#" class="lh-1"><span class="material-icons"> format_bold </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> format_italic </span></a>
+                  <a href="#" class="lh-1"
+                    ><span class="material-icons"> format_list_bulleted </span></a
+                  >
+                  <a href="#" class="lh-1"
+                    ><span class="material-icons"> format_list_numbered </span></a
+                  >
+                  <a href="#" class="lh-1"><span class="material-icons"> image </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> link </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> code </span></a>
+                </div>
+                <textarea placeholder="Reply an answer" class="textarea-reply p-4"></textarea>
+                <div class="d-flex justify-content-end mb-3 me-3">
+                  <button type="button" class="cancel-btn btn btn-outline-success py-2 px-4 me-3">
+                    Cancel
+                  </button>
+                  <button type="button" class="reply-btn btn btn-success py-2 px-4">Reply</button>
+                </div>
+              </div>
+              <!-- editor end -->
             </div>
-            <textarea placeholder="Reply an answer" class="textarea-reply p-4"></textarea>
-            <div class="d-flex justify-content-end mb-3">
-              <button type="button" class="cancel-btn btn btn-outline-success py-2 px-4 me-3">
+            <!-- card end -->
+          </div>
+          <!-- tab-pane-2 end -->
+          <!-- tab-pane-3 start -->
+          <div
+            class="tab-pane fade"
+            id="list-messages"
+            role="tabpanel"
+            aria-labelledby="list-messages-list"
+          >
+            <!-- card start -->
+            <div class="card mb-3">
+              <div class="card-header d-flex align-items-center">
+                <div class="me-auto">
+                  <small class="fz-xs">Final Assignment</small>
+                  <p class="fw-bold mb-0">Have a problem with this…</p>
+                </div>
+                <span class="material-icons"> more_vert </span>
+              </div>
+              <div class="card-body">
+                <!-- student question start -->
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="rounded-circle"
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/emilywang.jpeg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3 pb-3 border-bottom mb-3">
+                    <p>
+                      Tony Wei <br />
+                      <time class="text-secondary fz-xs">8:38 PM (18 hours ago)</time>
+                    </p>
+                    <p class="fz-s">
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                      question: Why in the following code the height of the <code>div</code> is
+                      bigger than the height of the <code>img</code> ? There is a gap below the
+                      image, but it doesn’t seems to be a padding/margin. What is the gap or extra
+                      space below image?
+                    </p>
+                    <a href="#" class="btn btn-light border fw-bold" download="HW-2-David.zip"
+                      ><span class="material-icons me-2">attach_file</span>HW-2-David.zip</a
+                    >
+                  </div>
+                </div>
+                <!-- student question end -->
+                <!-- teacher reply start -->
+                <div class="reply d-flex">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="rounded-circle"
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/andychen.jpeg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <div class="d-flex align-items-center">
+                      <p class="me-auto">
+                        Andy Chen (You) <br />
+                        <time class="text-secondary fz-xs">13:24 AM (1 hours ago)</time>
+                      </p>
+                      <ul class="list-unstyled d-flex">
+                        <li class="me-4">
+                          <a href="#"><span class="material-icons"> star_border </span></a>
+                        </li>
+                        <li>
+                          <a class="edit-btn" href="#"
+                            ><span class="material-icons" title="手刻版本">edit</span></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="fz-s">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on
+                      the same line that a, b, c and d sit on. There is space below that line for
+                      the descenders you find on letters like g, j, p and q.
+                    </p>
+                    <p class="fz-s">You can:</p>
+                    <ul class="fz-s">
+                      <li>
+                        adjust the <code>vertical-align</code> of the image to position it elsewhere
+                        (e.g. the <code>middle</code> ) or
+                      </li>
+                      <li>change the <code>display</code> so it isn’t inline.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- teacher reply end -->
+              </div>
+              <!-- card-body end -->
+              <!-- editor start -->
+              <div class="editor d-none">
+                <div class="card-header list-unstyled d-flex gap-4 align-items-center">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light fw-bolder dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Body Text
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Heading Text</a></li>
+                      <li><a class="dropdown-item" href="#">Subheading Text</a></li>
+                      <li><a class="dropdown-item" href="#">Body Text</a></li>
+                    </ul>
+                  </div>
+                  <a href="#" class="lh-1"><span class="material-icons"> format_bold </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> format_italic </span></a>
+                  <a href="#" class="lh-1"
+                    ><span class="material-icons"> format_list_bulleted </span></a
+                  >
+                  <a href="#" class="lh-1"
+                    ><span class="material-icons"> format_list_numbered </span></a
+                  >
+                  <a href="#" class="lh-1"><span class="material-icons"> image </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> link </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> code </span></a>
+                </div>
+                <textarea placeholder="Reply an answer" class="textarea-reply p-4"></textarea>
+                <div class="d-flex justify-content-end mb-3 me-3">
+                  <button type="button" class="cancel-btn btn btn-outline-success py-2 px-4 me-3">
+                    Cancel
+                  </button>
+                  <button type="button" class="reply-btn btn btn-success py-2 px-4">Reply</button>
+                </div>
+              </div>
+              <!-- editor end -->
+            </div>
+            <!-- card end -->
+          </div>
+          <!-- tab-pane-3 end -->
+          <!-- tab-pane-4 start -->
+          <div
+            class="tab-pane fade"
+            id="list-settings"
+            role="tabpanel"
+            aria-labelledby="list-settings-list"
+          >
+            <!-- card start -->
+            <div class="card mb-3">
+              <div class="card-header d-flex align-items-center">
+                <div class="me-auto">
+                  <small class="fz-xs">Final Assignment</small>
+                  <p class="fw-bold mb-0">Did I do it right?</p>
+                </div>
+                <span class="material-icons"> more_vert </span>
+              </div>
+              <div class="card-body">
+                <!-- student question start -->
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="rounded-circle"
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/emilywang.jpeg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3 pb-3 border-bottom mb-3">
+                    <p>
+                      Christina Lin <br />
+                      <time class="text-secondary fz-xs">7:38 PM (19 hours ago)</time>
+                    </p>
+                    <p class="fz-s">
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                      question: Why in the following code the height of the <code>div</code> is
+                      bigger than the height of the <code>img</code> ? There is a gap below the
+                      image, but it doesn’t seems to be a padding/margin. What is the gap or extra
+                      space below image?
+                    </p>
+                    <a href="#" class="btn btn-light border fw-bold" download="HW-2-David.zip"
+                      ><span class="material-icons me-2">attach_file</span>HW-2-David.zip</a
+                    >
+                  </div>
+                </div>
+                <!-- student question end -->
+                <!-- teacher reply start -->
+                <div class="reply d-flex">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="rounded-circle"
+                      style="width: 40px; height: 40px"
+                      src="./assets/images/andychen.jpeg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <div class="d-flex align-items-center">
+                      <p class="me-auto">
+                        Andy Chen (You) <br />
+                        <time class="text-secondary fz-xs">13:24 AM (1 hours ago)</time>
+                      </p>
+                      <ul class="list-unstyled d-flex">
+                        <li class="me-4">
+                          <a href="#"><span class="material-icons"> star_border </span></a>
+                        </li>
+                        <li>
+                          <a class="edit-btn" href="#"
+                            ><span class="material-icons" title="手刻版本">edit</span></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="fz-s">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on
+                      the same line that a, b, c and d sit on. There is space below that line for
+                      the descenders you find on letters like g, j, p and q.
+                    </p>
+                    <p class="fz-s">You can:</p>
+                    <ul class="fz-s">
+                      <li>
+                        adjust the <code>vertical-align</code> of the image to position it elsewhere
+                        (e.g. the <code>middle</code> ) or
+                      </li>
+                      <li>change the <code>display</code> so it isn’t inline.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- teacher reply end -->
+              </div>
+              <!-- card-body end -->
+              <!-- editor start -->
+              <div class="editor d-none">
+                <div class="card-header list-unstyled d-flex gap-4 align-items-center">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-light fw-bolder dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Body Text
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Heading Text</a></li>
+                      <li><a class="dropdown-item" href="#">Subheading Text</a></li>
+                      <li><a class="dropdown-item" href="#">Body Text</a></li>
+                    </ul>
+                  </div>
+                  <a href="#" class="lh-1"><span class="material-icons"> format_bold </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> format_italic </span></a>
+                  <a href="#" class="lh-1"
+                    ><span class="material-icons"> format_list_bulleted </span></a
+                  >
+                  <a href="#" class="lh-1"
+                    ><span class="material-icons"> format_list_numbered </span></a
+                  >
+                  <a href="#" class="lh-1"><span class="material-icons"> image </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> link </span></a>
+                  <a href="#" class="lh-1"><span class="material-icons"> code </span></a>
+                </div>
+                <textarea placeholder="Reply an answer" class="textarea-reply p-4"></textarea>
+                <div class="d-flex justify-content-end mb-3 me-3">
+                  <button type="button" class="cancel-btn btn btn-outline-success py-2 px-4 me-3">
+                    Cancel
+                  </button>
+                  <button type="button" class="reply-btn btn btn-success py-2 px-4">Reply</button>
+                </div>
+              </div>
+              <!-- editor end -->
+            </div>
+            <!-- card end -->
+          </div>
+          <!-- tab-pane-4 end -->
+          <!-- prev-next-link & reply-btn start -->
+          <div class="link-reply-btn d-flex justify-content-between mb-4">
+            <div>
+              <a href="#"><span class="material-icons me-4"> chevron_left </span></a
+              ><a href="#"><span class="material-icons"> chevron_right </span></a>
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-success py-2 px-4 me-3">
+                Mark as read
+              </button>
+              <button
+                type="button"
+                class="cancel-btn btn btn-outline-success py-2 px-4 me-3 d-none"
+              >
                 Cancel
               </button>
               <button type="button" class="reply-btn btn btn-success py-2 px-4">Reply</button>
             </div>
           </div>
-          <!-- editor end -->
+          <!-- prev-next-link & reply-btn end -->
         </div>
-        <!-- card end -->
-        <!-- prev-next-link & reply-btn start -->
-        <div class="link-reply-btn d-flex justify-content-between mb-4">
-          <div>
-            <a href="#"><span class="material-icons me-4"> chevron_left </span></a
-            ><a href="#"><span class="material-icons"> chevron_right </span></a>
-          </div>
-          <div>
-            <button type="button" class="btn btn-outline-success py-2 px-4 me-3">
-              Mark as read
-            </button>
-            <button type="button" class="cancel-btn btn btn-outline-success py-2 px-4 me-3 d-none">
-              Cancel
-            </button>
-            <button type="button" class="reply-btn btn btn-success py-2 px-4">Reply</button>
-          </div>
-        </div>
-        <!-- prev-next-link & reply-btn end -->
+        <!-- tab-content end -->
       </div>
       <!-- col-8 end -->
     </div>

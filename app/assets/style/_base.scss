@@ -1,14 +1,17 @@
+// base
 body {
   font-family: 'Lato', sans-serif;
-  //   font-family: 'Roboto', sans-serif;
+  color: #212529; // gray-900
 }
 .container {
   max-width: 984px;
 }
 a {
-  color: black !important;
+  line-height: 1;
+  color: #212529 !important;
+  text-decoration: none;
   &:hover {
     color: #198754 !important;
-    transition: color 0.5s;
+    transition: color 0.3s;
   }
 }

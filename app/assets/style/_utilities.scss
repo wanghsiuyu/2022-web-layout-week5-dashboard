@@ -1,6 +1,39 @@
+// utilities
 .fz-xs {
   font-size: 12px;
 }
 .fz-s {
   font-size: 14px;
+}
+.modal-header {
+  padding: 32px;
+  border-bottom: 0;
+}
+.modal-title {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
+}
+.modal-body {
+  padding: 0 32px 32px;
+}
+.modal-body-title {
+  font-size: 20px;
+  line-height: 33px;
+  font-weight: 700;
+}
+.form-label {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  &:checked {
+    background-color: #198754;
+  }
+}
+.modal-footer {
+  padding: 16px 32px;
 }
