@@ -1,5 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
+  color: #212529;
 }
 
 .container {
@@ -7,14 +8,16 @@ body {
 }
 
 a {
-  color: black !important;
+  line-height: 1;
+  color: #212529 !important;
+  text-decoration: none;
 }
 
 a:hover {
   color: #198754 !important;
-  -webkit-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .fz-xs {
@@ -23,6 +26,46 @@ a:hover {
 
 .fz-s {
   font-size: 14px;
+}
+
+.modal-header {
+  padding: 32px;
+  border-bottom: 0;
+}
+
+.modal-title {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+.modal-body {
+  padding: 0 32px 32px;
+}
+
+.modal-body-title {
+  font-size: 20px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+.form-label {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+}
+
+.form-check-input:checked {
+  background-color: #198754;
+}
+
+.modal-footer {
+  padding: 16px 32px;
 }
 
 .nav li a:hover {
@@ -56,6 +99,32 @@ code {
   border: none;
   resize: none;
   outline: none;
+}
+
+.page-item {
+  width: 32px;
+  height: 32px;
+}
+
+.page-link {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 1px solid #198754;
+}
+
+.page-link-active {
+  color: #fff !important;
+  background-color: #198754;
+}
+
+.page-link-active:hover {
+  color: #fff !important;
+  background-color: #198754;
+}
+
+.page-link:hover {
+  border: 1px solid #198754;
 }
 
 /*# sourceMappingURL=all.css.map */
